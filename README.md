@@ -36,6 +36,12 @@ pip install -r requirements/common.txt
 **运行程序:**
 
 如果通过 virtualenv 来运行程序, 需要先激活虚拟环境.
+**初始化之前请注意**
+清空data_sqlite.db库中alembic_version、users的数据，否则无法完成初始化数据库.
+
+错误信息2：db migrate fail: alembic.util.exc.CommandError: Can't locate revision identified by (xxxx)
+
+错误信息2：sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) column username is not unique
 
 **初始化数据库**:
 
